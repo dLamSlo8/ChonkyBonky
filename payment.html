@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | ChonkyBonky</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/payment.js" defer></script>
+</head>
+<body>
+    <header class="text-center text-white">
+        <h1>ChonkyBonky™</h1>
+    </header>
+    <main class="payment-c-main-wrapper c-container mt-8">
+        <div class="payment-c-package-content">
+            <header>
+                <h2 class="font-xl">You selected the <span class="payment-js-package-name"></span> Package</h2>
+                <p class="mt-2">$<span class="payment-js-package-cost"></span> will be withdrawn from your bank account.</p>
+            </header>
+            <p class="mt-6">Please enter your social security number (SSN)* below:</p>
+            <form class="payment-c-ssn-form payment-js-ssn-form mt-4">
+                <input type="text" id="ssn" name="ssn" />
+                <button class="c-btn" type="submit" data-variant="thin">Pay Now</button>
+                <span class="c-input-error" data-hidden>Enter a value fucker, you can't cheat ChonkyBonky™.</span>
+            </form>
+            <p class="mt-5">
+                *We use our patented AI technology “ChonkyBonkyIdentityTheftAI” to determine your bank routing number,
+                credit card information, and shipping address.
+            </p>
+        </div>
+        <div class="payment-c-package-img">
+            <img class="payment-js-package-img" src="" alt="">
+        </div>
+    </main>
+</body>
+</html>

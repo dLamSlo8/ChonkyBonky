@@ -1,0 +1,9 @@
+:root {
+    --white: #FFFFFF;
+    --black: #121212;
+    --bg-color: #00A0F3;
+    --btn-bg-default: var(--white);
+    --btn-text-default: var(--black);
+    --btn-bg-active: #0F00BD;
+    --btn-text-active: var(--white);
+}
