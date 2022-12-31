@@ -8,23 +8,38 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preload" as="image" href="img/chonkybonky-back.png">
     <link rel="preload" as="image" href="img/testimonial-after.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/index.js" defer></script>
 </head>
 <body class="page-scam">
     <main class="c-main-wrapper">
         <div class="c-left-ad-wrapper-absolute">
             <div class="c-left-ad">
-                <img src="img/kim-wexler.png" alt="Kim Wexler BABY">
-                <img src="img/kim-wexler-horizontal-small.png" alt="">
-                <img src="img/kim-wexler-horizontal.png" alt="">
+                <a class="c-left-ad__link-mobile" href="img/kim-feet.jpg" target="_blank">
+                    <img class="c-right-ad__img-1" src="img/kim-wexler-horizontal-small.png" alt="">
+                </a>
+                <div class="c-left-ad__desktop-wrapper">
+                    <img class="c-right-ad__img-2" src="img/kim-wexler-horizontal.png" alt="">
+                    <img class="c-right-ad__img-3" src="img/kim-wexler.png" alt="Kim Wexler BABY">
+                    <div class="c-left-ad__link">
+                        <a class="c-btn" href="img/kim-feet.jpg" target="_blank">Confirm</a>
+                        <a class="c-btn" href="img/lalo.gif" target="_blank">Ignore</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="c-right-ad-wrapper-absolute">
             <div class="c-right-ad">
-                <a class="c-right-ad__link" href="https://tateshustlers.com/"></a>
-                <img src="img/andrew-tate.png" alt="Andrew Tate BABY">
-                <img src="img/andrew-tate-horizontal-small.png" alt="Andrew Tate BABY">
-                <img src="img/andrew-tate-horizontal.png" alt="">
+                <a class="c-right-ad__link-mobile" href="https://tateshustlers.com/" target="_blank">
+                    <img class="c-right-ad__img-1" src="img/andrew-tate-horizontal-small.png" alt="Andrew Tate BABY">
+                </a>
+                <div class="c-right-ad__desktop-wrapper">
+                    <img class="c-right-ad__img-2" src="img/andrew-tate-horizontal.png" alt="">
+                    <img class="c-right-ad__img-3" src="img/andrew-tate.png" alt="Andrew Tate BABY">
+                    <a class="c-btn c-right-ad__link" href="https://tateshustlers.com/" target="_blank">Give Me Your Money</a>
+                </div>
             </div>
         </div>
         <div class="c-container">
@@ -98,7 +113,7 @@
                             <li class="c-pricing-package__feature">One container of ChonkyBonky (69 total pills)</li>
                             <li class="c-pricing-package__feature">Literally nothing else</li>
                         </ul>
-                        <a class="c-pricing-package__link c-btn" href="" data-variant="active centered">Purchase Now</a>
+                        <a class="c-pricing-package__link c-btn" href="/payment?package=not-a-scam" data-variant="active centered">Purchase Now</a>
                     </article>
                     <article class="c-pricing-package" data-variant="beeg">
                         <div class="c-pricing-package__wrapper">
@@ -111,7 +126,7 @@
                                 <li class="c-pricing-package__feature">Three containers of ChonkyBonky (207 total pills)</li>
                                 <li class="c-pricing-package__feature">Literally nothing else</li>
                             </ul>
-                            <a class="c-pricing-package__link c-btn" href="" data-variant="active centered">Purchase Now</a>
+                            <a class="c-pricing-package__link c-btn" href="/payment?package=literally-a-scam" data-variant="active centered">Purchase Now</a>
                         </div>
                     </article>
                     <article class="c-pricing-package">
@@ -124,7 +139,7 @@
                             <li class="c-pricing-package__feature">Two containers of ChonkyBonky (138 total pills)</li>
                             <li class="c-pricing-package__feature">Literally nothing else</li>
                         </ul>
-                        <a class="c-pricing-package__link c-btn" href="" data-variant="active centered">Purchase Now</a>
+                        <a class="c-pricing-package__link c-btn" href="/payment?package=kind-of-a-scam" data-variant="active centered">Purchase Now</a>
                     </article>
                 </div>
             </section>
