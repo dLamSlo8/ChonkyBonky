@@ -197,7 +197,7 @@ img {
     .c-right-ad__desktop-wrapper {
         display: block;
         width: 80%;
-        max-width: 650px;
+        max-width: 600px;
         margin: 0 auto;
         position: absolute;
         left: 50%;
@@ -757,7 +757,7 @@ input {
 
 .payment-confirmation-c-video {
     display: block;
-    max-width: 450px;
+    max-width: 300px;
     width: 100%;
 }
 
