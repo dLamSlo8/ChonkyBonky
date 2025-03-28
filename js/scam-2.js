@@ -1,13 +1,18 @@
 let sound = new Howl({
     src: ['/img/scam-2/grimace-final.mp3'],
-    autoplay: true,
+    // autoplay: true,
     loop: true,
     volume: 0.75
 });
 
+
+
 const err = document.querySelector('.c-input-error');
 
 
+$('.js-howler-play').on('click', () => {
+    sound.play();
+})
 $('.js-howler-button').on('click', (e) => {
     if ($('.js-howler-button span').text() === 'Pause') {
         console.log('Pause');
