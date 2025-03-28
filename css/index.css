@@ -80,8 +80,17 @@ img {
                 background-color 100ms ease-in-out;
 }
 
+.c-btn span {
+    color: var(--btn-text-default);
+    background-color: var(--btn-bg-default);
+    transition: color 100ms ease-in-out,
+                background-color 100ms ease-in-out;
+}
+
 .c-btn:hover,
-.c-btn:focus {
+.c-btn:focus,
+.c-btn:hover span,
+.c-btn:focus span {
     color: var(--btn-text-active);
     background-color: var(--btn-bg-active);
 }
@@ -174,7 +183,8 @@ img {
 }
 
 @media (max-width: 1375px) {
-    body.page-scam {
+    body.page-scam,
+    body.page-scam-2 {
         margin-top: 12rem;
         margin-bottom: 8rem;
     }
@@ -629,7 +639,7 @@ input {
     color: #bb0000;
 }
 
-.c-input-error[data-hidden] {
+[data-hidden] {
     display: none;
 }
 
@@ -768,4 +778,101 @@ input {
     font-size: 1rem;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-x-2 > * + * {
+    margin-left: 1rem;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.space-y-2 > * + * {
+    margin-top: 1rem;
+}
+
+
+[data-section-id="blurb"] {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-scam-2 h2 {
+    font-size: 2.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-2xl {
+    font-size: 2rem;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+
+.page-scam-2 .c-pictures-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem;
+}
+.page-scam-2 .c-picture {
+    grid-column: span 12 / span 12;
+}
+.page-scam-2 .c-picture h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.page-scam-2 .c-picture img {
+
+}
+.page-scam-2 .c-picture p {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+@media (min-width: 1024px) {
+    .page-scam-2 .c-picture {
+        grid-column: span 6 / span 6;
+    }
+}
+
+[data-section-id="buy"] h3 {
+    font-size: 1.125rem;
+}
+
+[data-section-id="buy"] form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 1rem;
+}
+@media (max-width: 767px) {
+    header h1 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
