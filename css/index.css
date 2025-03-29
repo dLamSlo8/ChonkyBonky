@@ -120,6 +120,10 @@ img {
     padding-right: 1.5rem;
 }
 
+.page-scam-2 .c-container {
+    max-width: 900px;
+}
+
 .c-main-wrapper {
     position: relative;
 }
@@ -268,8 +272,8 @@ img {
     }
 
     .c-left-ad__link {
-        bottom: 1rem;
-        right: 1rem;
+        bottom: 0.25rem;
+        right: 0.25rem;
         left: unset;
         transform: unset;
         width: auto;
@@ -853,7 +857,7 @@ input {
     font-style: italic;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .page-scam-2 .c-picture {
         grid-column: span 6 / span 6;
     }
@@ -879,4 +883,27 @@ input {
     .js-howler-play {
         display: none;
     }
+}
+
+[data-section-id="controversy"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-legal {
+    display: flex;
+    gap: 1rem;
+}
+
+.c-legal .c-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-legal .c-picture img {
+    max-height: 170px;
+    min-height: 170px;
+    height: 170px;
 }
